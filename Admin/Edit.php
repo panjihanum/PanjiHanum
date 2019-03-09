@@ -1,0 +1,20 @@
+<?php
+if(isset($_POST['insert'])){
+    header('location:DaerahInsert.php');
+}
+if(isset($_POST['update'])){
+    header('location:DaerahUpdate.php');
+}
+if(isset($_POST['delete'])){
+    header('location:DaerahDelete.php');
+}
+if(isset($_POST['insertPenduduk'])){
+    header('location:PendudukInsert.php');
+}
+if(isset($_POST['updatePenduduk'])){
+    header('location:PendudukUpdate.php');
+}
+if(isset($_POST['deletePenduduk'])){
+    header('location:PendudukDelete.php');
+}
+?>
