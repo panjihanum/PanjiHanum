@@ -29,6 +29,9 @@
  
  Stack yang digunakan:
  login.php -> adalah controller agar mengatur masuk login atau tidaknya (mengecek)
+ 
  Controller.php -> adalah Controller untuk Data Daerah
+ 
  ControllerPenduduk.php -> adalah Controller untuk Data Penduduk
+ 
  config.php -> didalamnya ada function rupiah yang digunakan untuk mengubah nilai menjadi rupiah , dan didalamnya jga ada $koneksi untuk Mengkoneksikan Database
