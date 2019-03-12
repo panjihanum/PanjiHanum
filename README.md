@@ -1,6 +1,6 @@
   ## Authors
 
-  * **Panji Hanum** - *Initial work* - [Panji Hanum](https://github.com/panjihanum)
+
 
   ### Akun Login
   
