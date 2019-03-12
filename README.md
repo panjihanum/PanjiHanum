@@ -20,7 +20,7 @@
 ### Sebelum Menjalankan Program Install SQL Terlabih dahulu
    1. Buka `Application/PanjiHanum/sql/dbarkademy.sql` menggunakan Visual Studio atau Notepad
    2. Select All dan Copy 
-   3. Buka * [PanjiHanum](https://localhost:8888/PanjiHanum)
+   3. Buka [PanjiHanum](https://localhost:8888/PanjiHanum)
    4. pilih Menu SQL
    5. Paste Semua
    6. Tekan Go
