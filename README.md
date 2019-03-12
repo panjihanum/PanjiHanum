@@ -27,11 +27,11 @@
    7. Data Sudah tersimpan
   
 ### Pemrograman  yang dipakai :
-    1. HTML
-    2. CSS
-    3. JavaScript
-    4. Bootstrap
-    5. PHP
+    * HTML
+    * CSS
+    * JavaScript
+    * Bootstrap
+    * PHP
  
 ### Stack yang digunakan:
    * login.php -> Adalah controller agar mengatur masuk login atau tidaknya (mengecek)
