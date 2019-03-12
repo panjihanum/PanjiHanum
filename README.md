@@ -4,11 +4,11 @@
 
   ### Akun Login
   
-  ### ID : 1001
+  ID : 1001
   
   Password : panji555
   
-  Software Yang dibutuhkan
+  ### Software Yang dibutuhkan
   1. Browser(google, Mozila, atau yang lainnya)
   2. XAMPP(untuk menjalankan XAMPP)
   3. Visual Studio(Editor)
