@@ -11,14 +11,14 @@
 ### Panduan Menjalankan Program
   1. Install XAMPP
   2. Clone atau download [repository ini](https://github.com/panjihanum/PanjiHanum/archive/master.zip) 
-  3. Pindahkan repository folder ke *`/Application/XAMPP/htdocs` folder pada Local Drive anda.
+  3. Pindahkan repository folder ke *`/Application/XAMPP/htdocs`* folder pada Local Drive anda.
   4. Mulai Aplikasi XAMPP, Hidupkan Apache dan MySQL
   5. Di browser, navigate to  `https://localhost:8888/PanjiHanum-master`
 
 
   
 ### Sebelum Menjalankan Program Install SQL Terlabih dahulu
-   1. Buka *`Application/PanjiHanum/sql/dbarkademy.sql` menggunakan Visual Studio atau Notepad
+   1. Buka *`Application/PanjiHanum/sql/dbarkademy.sql`* menggunakan Visual Studio atau Notepad
    2. Select All dan Copy 
    3. Buka `https://localhost:8888/PanjiHanum-master`
    4. pilih Menu SQL
@@ -34,7 +34,7 @@
    * PHP
  
 ### Stack yang digunakan:
-   * *`login.php` -> Adalah controller agar mengatur masuk login atau tidaknya (mengecek)
-   * *`Controller.php` -> Adalah Controller untuk Data Daerah
-   * *`ControllerPenduduk.php` -> Adalah Controller untuk Data Penduduk
-   * *`Config.php` -> Didalamnya ada function rupiah yang digunakan untuk mengubah nilai menjadi Rupiah , dan didalamnya juga ada *`$koneksi` untuk Mengkoneksikan Database
+   * *`login.php`* -> Adalah controller agar mengatur masuk login atau tidaknya (mengecek)
+   * *`Controller.php`* -> Adalah Controller untuk Data Daerah
+   * *`ControllerPenduduk.php`* -> Adalah Controller untuk Data Penduduk
+   * *`Config.php`* -> Didalamnya ada function rupiah yang digunakan untuk mengubah nilai menjadi Rupiah , dan didalamnya juga ada *`$koneksi*` untuk Mengkoneksikan Database
