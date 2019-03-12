@@ -1,6 +1,6 @@
-  ## Authors
+  ## Pencipta
 
-
+    * **Panji Hanum**  - [panjihanum](https://github.com/panjihanum)
 
   ### Akun Login
   
@@ -16,12 +16,12 @@
 
     1. Install XAMPP
     2. Clone atau download this repository
-    3. Pindahkan repository folder to ''' /Application/XAMPP/htdocs ''' folder pada Local Drive anda.
+    3. Pindahkan repository folder to /Application/XAMPP/htdocs folder pada Local Drive anda.
     4. Mulai Aplikasi XAMPP, nyalakan Apache dan MySQL
     5. di browser, navigate to * [PanjiHanum](https://localhost:8888/PanjiHanum)
   
   ### Sebelum Menjalankan Program Install SQL Terlabih dahulu
-    1. Buka ''' Application/PanjiHanum/sql/dbarkademy.sql ''' menggunakan Visual Studio atau Notepad
+    1. Buka Application/PanjiHanum/sql/dbarkademy.sql menggunakan Visual Studio atau Notepad
     2. Select All dan Copy 
     3. Buka * [PanjiHanum](https://localhost:8888/PanjiHanum)
     4. pilih Menu SQL
@@ -40,4 +40,4 @@
     * login.php -> Adalah controller agar mengatur masuk login atau tidaknya (mengecek)
     * Controller.php -> Adalah Controller untuk Data Daerah
     * ControllerPenduduk.php -> Adalah Controller untuk Data Penduduk
-    * Config.php -> Didalamnya ada function rupiah yang digunakan untuk mengubah nilai menjadi Rupiah , dan didalamnya juga ada ''' $koneksi ''' untuk Mengkoneksikan Database
+    * Config.php -> Didalamnya ada function rupiah yang digunakan untuk mengubah nilai menjadi Rupiah , dan didalamnya juga ada $koneksi untuk Mengkoneksikan Database
