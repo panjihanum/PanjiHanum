@@ -14,9 +14,8 @@
     3. Pindahkan repository folder to /Application/XAMPP/htdocs folder pada Local Drive anda.
     4. Mulai Aplikasi XAMPP, nyalakan Apache dan MySQL
     5. di browser, navigate to 
-    '''
-    * [PanjiHanum](https://localhost:8888/PanjiHanum)
-    '''
+   [PanjiHanum](https://localhost:8888/PanjiHanum)
+
   
 ### Sebelum Menjalankan Program Install SQL Terlabih dahulu
     1. Buka Application/PanjiHanum/sql/dbarkademy.sql menggunakan Visual Studio atau Notepad
