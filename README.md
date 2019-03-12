@@ -20,11 +20,11 @@
 ### Sebelum Menjalankan Program Install SQL Terlabih dahulu
    1. Buka *`Application/PanjiHanum-master/sql/dbarkademy.sql`* menggunakan Visual Studio atau Notepad
    2. Select All dan Copy 
-   3. Buka `https://localhost:8888/PanjiHanum-master`
+   3. Buka `https://localhost:8888/phpmyadmin`
    4. pilih Menu SQL
    5. Paste Semua
    6. Tekan Go
-   7. Data Sudah tersimpan
+   7. Data Selesai disimpan.
   
 ### Pemrograman  yang dipakai :
    * HTML
