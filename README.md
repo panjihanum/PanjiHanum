@@ -32,6 +32,9 @@
    * JavaScript
    * Bootstrap
    * PHP
+   
+### Database yang dipakai :
+   * MySQLi
  
 ### Stack yang digunakan:
    * *`login.php`* -> Adalah controller agar mengatur masuk login atau tidaknya (mengecek)
