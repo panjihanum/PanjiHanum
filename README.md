@@ -37,4 +37,4 @@
    * *`login.php`* -> Adalah controller agar mengatur masuk login atau tidaknya (mengecek)
    * *`Controller.php`* -> Adalah Controller untuk Data Daerah
    * *`ControllerPenduduk.php`* -> Adalah Controller untuk Data Penduduk
-   * *`Config.php`* -> Didalamnya ada function rupiah yang digunakan untuk mengubah nilai menjadi Rupiah , dan didalamnya juga ada *`$koneksi*` untuk Mengkoneksikan Database
+   * *`Config.php`* -> Didalamnya ada function rupiah yang digunakan untuk mengubah nilai menjadi Rupiah , dan didalamnya juga ada *`$koneksi`* untuk Mengkoneksikan Database
