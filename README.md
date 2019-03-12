@@ -6,7 +6,7 @@
 ### Software Yang dibutuhkan
   * Browser(Google Chrome, Mozila, atau yang lainnya)
   * [XAMPP](https://www.apachefriends.org/download.html)(untuk menjalankan XAMPP)
-  * [Visual Studio(https://visualstudio.microsoft.com/downloads/)](Editor)
+  * [Visual Studio](https://visualstudio.microsoft.com/downloads/)(Editor)
 
 ### Panduan Menjalankan Program
   1. Install XAMPP
