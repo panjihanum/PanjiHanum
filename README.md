@@ -1,6 +1,6 @@
   ## Authors
 
-* **Panji Hanum** - *Initial work* - [Panji Hanum](https://github.com/panjihanum)
+  * **Panji Hanum** - *Initial work* - [Panji Hanum](https://github.com/panjihanum)
 
   ### Akun Login
   
@@ -12,7 +12,7 @@
     2. XAMPP(untuk menjalankan XAMPP)
     3. Visual Studio(Editor)
 
-  ###  Panduan Menjalankan Program
+  ### Panduan Menjalankan Program
 
     1. Install XAMPP
     2. Clone atau download this repository
@@ -36,7 +36,7 @@
     4. Bootstrap
     5. PHP
  
-  # Stack yang digunakan:
+  ### Stack yang digunakan:
     * login.php -> Adalah controller agar mengatur masuk login atau tidaknya (mengecek)
     * Controller.php -> Adalah Controller untuk Data Daerah
     * ControllerPenduduk.php -> Adalah Controller untuk Data Penduduk
