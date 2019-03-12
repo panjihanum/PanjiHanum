@@ -10,7 +10,7 @@
 
 ### Panduan Menjalankan Program
   1. Install XAMPP
-  2. Clone atau download this repository
+  2. Clone atau download [repository ini](https://github.com/panjihanum/PanjiHanum/archive/master.zip) 
   3. Pindahkan repository folder to `/Application/XAMPP/htdocs` folder pada Local Drive anda.
   4. Mulai Aplikasi XAMPP, nyalakan Apache dan MySQL
   5. di browser, navigate to  [PanjiHanum](https://localhost:8888/PanjiHanum)
