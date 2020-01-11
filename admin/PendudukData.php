@@ -60,9 +60,9 @@
     <h1>Data Penduduk</h1>
     </div>
     <div class="container-fluid">
-      <FORM ACTION="" METHOD="POST" name="pilihan">
+      <FORM ACTION="" METHOD="POST">
         <input type="radio" name="pilihan" value="All"  />Semua<br>
-        <input type="radio" name="pilihan" value="NotAll" checked/>Region<br>
+        <input type="radio" name="pilihan" value="NotAll" />Region<br>
         <div class='control-group'>
                 <div class='controls'>
                   <select name="pilih" id="level">
