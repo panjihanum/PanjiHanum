@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Data Penduduk</title>
+    <title>Data Daerah</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -57,71 +57,33 @@
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="current">Tables</a> </div>
-    <h1>Data Penduduk</h1>
+    <h1>Data Daerah</h1>
     </div>
     <div class="container-fluid">
-      <FORM ACTION="" METHOD="POST" name="pilihan">
-        <input type="radio" name="pilihan" value="All" checked />Semua<br>
-        <input type="radio" name="pilihan" value="NotAll"/>Region<br>
-        <div class='control-group'>
-                <div class='controls'>
-                  <select name="pilih" id="level">
-                  
-                    <?php 
-                      include '../config/config.php';
-                      $getndaerah = mysqli_query($koneksi, "SELECT name FROM regions");
-                      while($row = mysqli_fetch_assoc($getndaerah))
-                      {  
-                    ?>
-        
-                    <option value="<?php echo($row['name']) ?>"><?php echo($row['name']) ?></option>
-        
-                    <?php
-                      } 
-                    ?>
-        
-                  </select>
-                </div>
-              </div>
-        
-          <input type="submit" name="submits" value="Tampilkan">
-      </FORM>
       <hr>
       <div class='row-fluid'>
         <div class='span12'>
-          <a href='PendudukInsert.php' class='btn btn-primary'>Add Data</a>
-          <a href='PendudukUpdate.php' class='btn btn-primary'>Update Data</a>
-          <a href='PendudukDelete.php' class='btn btn-primary'>Delete Data</a>
+          <a href='DaerahInsert.php' class='btn btn-primary'>Add Data</a>
+          <a href='DaerahUpdate.php' class='btn btn-primary'>Update Data</a>
+          <a href='DaerahDelete.php' class='btn btn-primary'>Delete Data</a>
           <div class='widget-box'>
             <div class='widget-title'> <span class='icon'> <i class='icon-th'></i> </span>
-              <h5>Tambah Data</h5>
+              <h5>Static table</h5>
             </div>
             <div class='widget-content nopadding'>
-                
-                <?php
-                    $query = mysqli_query($koneksi, "select * from view_person");
-                    if(isset($_POST['submits']))
-                    {
-                        $pilihan = $_POST['pilihan'];
-                        $pilih = $_POST['pilih'];
-                        if($pilihan=='All')
-                        {
-                            $query = mysqli_query($koneksi, "select * from view_person");
-                        }
-                        else
-                        {
-                             $query = mysqli_query($koneksi, "select * from view_person WHERE nama_daerah='$pilih'");
-                        }
-                    }
-                ?>              
-              </p>
               <table class='table table-bordered table-striped'>
+                <?php
+                  include '../config/config.php';
+                  $query = mysqli_query($koneksi, "select * from regions");
+                ?>
                 <thead>
                   <tr>
-                    <th> id </th>
-                    <th> Nama Penduduk </th>
-                    <th> Gaji </th>
-                    <th> Daerah </th>
+                  <th> id </th>
+                    <th> Nama Daerah </th>
+                    <th> Jumlah Penduduk </th>
+                    <th> Total pendapatan </th>
+                    <th> Rata-Rata pendapatan </th>
+                    <th> Status</th>
                   </tr>
                 </thead>
                 <?php
@@ -134,13 +96,50 @@
                     
                 ?>
                 <tbody>
-                  <tr>
-                    <td><?php echo $data['id']; ?></td>
+                <td><?php echo $data['id'];?></td>
                     <td><?php echo $data['name'];?></td>
-                    <td><?php echo rupiah($data['income']);?></td>
-                    <td><?php echo $data['nama_daerah']?></td>
-                    <?php }}?>
-                  </tr>
+                        
+                        <?php
+                            $id = $data['id'];
+                            $query2 = mysqli_query($koneksi, "SELECT COUNT(id) FROM person WHERE region_id =$id");
+                            $count = mysqli_fetch_array($query2);
+                        ?>
+                    <td><?php echo $count['COUNT(id)']?></td>
+                        
+                        <?php
+                            $query3 = mysqli_query($koneksi, "SELECT SUM(income) as jumlah FROM person WHERE region_id=$id");
+                            $jumlah = mysqli_fetch_array($query3);
+                        ?>
+
+                    <td><?php echo rupiah($jumlah['jumlah'])?></td>
+                        
+                        <?php
+                            $query4 = mysqli_query($koneksi, "SELECT AVG(income) as ratarata FROM person WHERE region_id=$id");
+                            $rata = mysqli_fetch_array($query4);
+                            
+                        ?>
+
+                    <td><?php echo rupiah($rata['ratarata'])?></td>
+                        
+                        <?php
+                            $result;
+                            if($rata['ratarata'] < 1700000)
+                            {   
+                                $result = "red";
+                            }
+                            else if($rata['ratarata'] > 1700000 && $rata['ratarata'] <2200000)
+                            {
+                                $result = "yellow";
+                            }
+                            else
+                            {
+                                $result = "Green";
+                            }
+                        ?>
+                    <td><hr size=10 color=<?php echo $result?>></td>
+                    <?php }?>
+                    <?php } ?>
+                </tr>
                 </tbody>
               </table>
           </div>
